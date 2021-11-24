@@ -78,7 +78,7 @@ p {
   overflow: hidden;
 }
 
-p a {
+p a.break {
   word-break: break-all;
 }
 
