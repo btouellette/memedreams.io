@@ -45,7 +45,7 @@ const amountScroll = (e) => {
   mintButton.onclick = async () => {
     let web3;
     try {
-      web3 = await Moralis.Web3.enableWeb3();
+      web3 = new Web3(window.ethereum);
       // Ensure we are connected to Polygon
       const chainID = await Moralis.getChainId();
       if (chainID !== polygonNetwork.chainId) {
